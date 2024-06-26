@@ -25,7 +25,7 @@ struct CardifyApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(subjects: Subject.samples)
         }
         .modelContainer(sharedModelContainer)
     }

@@ -6,56 +6,114 @@
 //
 
 import SwiftUI
-import SwiftData
 
 struct ContentView: View {
-    @Environment(\.modelContext) private var modelContext
-    @Query private var items: [Item]
-
+    
+    let appColor = Color(red: 203/255, green: 239/255, blue: 247/255)
+    let appTextColor = Color(red: 87/255, green: 170/255, blue: 189/255)
+    var subjects: [Subject]
+    
     var body: some View {
-        NavigationSplitView {
-            List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
-                    } label: {
-                        Text(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
+        NavigationStack {
+            ZStack {
+                appColor
+                    .ignoresSafeArea(edges: .all)
+                
+                VStack {
+                    
+                    topIcons
+                        .padding(.horizontal, 20)
+                    
+                    Spacer()
+                    
+                    VStack {
+                        HStack {
+                            Text("Your subjects")
+                            
+                            Spacer()
+                            
+                            Button(action: {
+                                
+                            }) {
+                                HStack {
+                                    Text("View all")
+                                    Image(systemName: "arrow.right")
+                                }
+                                .foregroundStyle(appTextColor)
+                                
+                            }
+                        }
+                        .padding(.horizontal, 20)
+                        .bold()
+                        .font(.title3)
+                        
+                        ScrollView(.horizontal, showsIndicators: false) {
+                            HStack(spacing: 20) {
+                                ForEach(Array(subjects.enumerated()), id: \.element.id) { index, subject in
+                                    
+                                    NavigationLink(destination: SubjectView(subject: subject, appColor: appColor, textColor: appTextColor)) {
+                                        ZStack {
+                                            RoundedRectangle(cornerRadius: 20)
+                                                .fill(.white)
+                                                .shadow(radius: 5)
+                                            VStack {
+                                                Spacer()
+                                                HStack() {
+                                                    Text(subject.name)
+                                                        .font(.title)
+                                                        .foregroundStyle(appTextColor)
+                                                    Spacer()
+                                                }
+                                                .padding()
+                                            }
+                                        }
+                                        .frame(width: 200, height: 250)
+                                        // add conditional padding
+                                        .padding(.leading, index == 0 ? 20 : 0)
+                                        .padding(.trailing, index == subjects.count - 1 ? 20 : 0)
+                                    .padding(.vertical, 10)
+                                    }
+                                }
+                            }
+                        }
                     }
-                }
-                .onDelete(perform: deleteItems)
-            }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
-                    }
+                    
+                    Spacer()
+                    
                 }
             }
-        } detail: {
-            Text("Select an item")
+            
         }
     }
-
-    private func addItem() {
-        withAnimation {
-            let newItem = Item(timestamp: Date())
-            modelContext.insert(newItem)
-        }
-    }
-
-    private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            for index in offsets {
-                modelContext.delete(items[index])
+    
+    private var topIcons: some View {
+        HStack {
+            VStack(alignment: .leading) {
+                Text("Hello Jack!")
+                    .font(.largeTitle)
+                    .bold()
+                Text("15 🔥")
+                    .font(.title3)
+            }
+            Spacer()
+            
+            Button(action: {
+                
+            }) {
+                ZStack {
+                    Circle()
+                        .foregroundStyle(.black)
+                    Text("🤩")
+                        .font(.largeTitle)
+                }
+                .frame(width: 65, height: 65)
             }
         }
     }
 }
 
+
 #Preview {
-    ContentView()
+    ContentView(subjects: Subject.samples)
         .modelContainer(for: Item.self, inMemory: true)
 }

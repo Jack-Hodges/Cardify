@@ -7,20 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE56EF1D2BE273AB00EFA90B /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE56EF1C2BE273AB00EFA90B /* Card.swift */; };
+		DE56EF1F2BE4A75200EFA90B /* EditCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE56EF1E2BE4A75200EFA90B /* EditCardView.swift */; };
+		DE56EF222BE4AA9900EFA90B /* PencilKitCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE56EF212BE4AA9900EFA90B /* PencilKitCanvas.swift */; };
+		DE56EF242BE4AE4300EFA90B /* BackAndTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE56EF232BE4AE4300EFA90B /* BackAndTitle.swift */; };
+		DE56EF282BE4C16800EFA90B /* SubjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE56EF272BE4C16800EFA90B /* SubjectView.swift */; };
+		DE56EF2A2BE4C23900EFA90B /* MiniCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE56EF292BE4C23900EFA90B /* MiniCardView.swift */; };
+		DE56EF2C2BE50AA600EFA90B /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE56EF2B2BE50AA600EFA90B /* Subject.swift */; };
+		DE8382AA2BEA12F900055CAD /* PencilKitCanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8382A92BEA12F900055CAD /* PencilKitCanvasView.swift */; };
+		DE8E652D2BDFC9DC00E7460E /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8E652C2BDFC9DC00E7460E /* CardView.swift */; };
+		DE9CFCB12BEDC30800898FCA /* AddCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9CFCB02BEDC30800898FCA /* AddCardView.swift */; };
 		DECC10F22BB6C5990016694A /* CardifyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECC10F12BB6C5990016694A /* CardifyApp.swift */; };
 		DECC10F42BB6C5990016694A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECC10F32BB6C5990016694A /* ContentView.swift */; };
 		DECC10F62BB6C5990016694A /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECC10F52BB6C5990016694A /* Item.swift */; };
 		DECC10F82BB6C5990016694A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DECC10F72BB6C5990016694A /* Assets.xcassets */; };
 		DECC10FB2BB6C5990016694A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DECC10FA2BB6C5990016694A /* Preview Assets.xcassets */; };
+		DEEF8B472BDF2082002C6073 /* ColouredProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEF8B462BDF2082002C6073 /* ColouredProgressBar.swift */; };
+		DEEF8B4A2BDF225D002C6073 /* LessonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEF8B492BDF225D002C6073 /* LessonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DE56EF1C2BE273AB00EFA90B /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		DE56EF1E2BE4A75200EFA90B /* EditCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCardView.swift; sourceTree = "<group>"; };
+		DE56EF212BE4AA9900EFA90B /* PencilKitCanvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PencilKitCanvas.swift; sourceTree = "<group>"; };
+		DE56EF232BE4AE4300EFA90B /* BackAndTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackAndTitle.swift; sourceTree = "<group>"; };
+		DE56EF272BE4C16800EFA90B /* SubjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectView.swift; sourceTree = "<group>"; };
+		DE56EF292BE4C23900EFA90B /* MiniCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniCardView.swift; sourceTree = "<group>"; };
+		DE56EF2B2BE50AA600EFA90B /* Subject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subject.swift; sourceTree = "<group>"; };
+		DE8382A92BEA12F900055CAD /* PencilKitCanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PencilKitCanvasView.swift; sourceTree = "<group>"; };
+		DE8E652C2BDFC9DC00E7460E /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		DE9CFCB02BEDC30800898FCA /* AddCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardView.swift; sourceTree = "<group>"; };
 		DECC10EE2BB6C5990016694A /* Cardify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cardify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DECC10F12BB6C5990016694A /* CardifyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardifyApp.swift; sourceTree = "<group>"; };
 		DECC10F32BB6C5990016694A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DECC10F52BB6C5990016694A /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		DECC10F72BB6C5990016694A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DECC10FA2BB6C5990016694A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DEEF8B462BDF2082002C6073 /* ColouredProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColouredProgressBar.swift; sourceTree = "<group>"; };
+		DEEF8B492BDF225D002C6073 /* LessonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +58,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DE56EF1B2BE2736C00EFA90B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				DE56EF1C2BE273AB00EFA90B /* Card.swift */,
+				DE56EF2B2BE50AA600EFA90B /* Subject.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		DE56EF202BE4AA8B00EFA90B /* PencilKit */ = {
+			isa = PBXGroup;
+			children = (
+				DE56EF212BE4AA9900EFA90B /* PencilKitCanvas.swift */,
+				DE8382A92BEA12F900055CAD /* PencilKitCanvasView.swift */,
+			);
+			path = PencilKit;
+			sourceTree = "<group>";
+		};
 		DECC10E52BB6C5990016694A = {
 			isa = PBXGroup;
 			children = (
@@ -53,6 +95,9 @@
 		DECC10F02BB6C5990016694A /* Cardify */ = {
 			isa = PBXGroup;
 			children = (
+				DE56EF1B2BE2736C00EFA90B /* Data */,
+				DEEF8B482BDF224C002C6073 /* Views */,
+				DEEF8B452BDF206D002C6073 /* Components */,
 				DECC10F12BB6C5990016694A /* CardifyApp.swift */,
 				DECC10F32BB6C5990016694A /* ContentView.swift */,
 				DECC10F52BB6C5990016694A /* Item.swift */,
@@ -68,6 +113,29 @@
 				DECC10FA2BB6C5990016694A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DEEF8B452BDF206D002C6073 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				DE56EF202BE4AA8B00EFA90B /* PencilKit */,
+				DEEF8B462BDF2082002C6073 /* ColouredProgressBar.swift */,
+				DE8E652C2BDFC9DC00E7460E /* CardView.swift */,
+				DE56EF232BE4AE4300EFA90B /* BackAndTitle.swift */,
+				DE56EF292BE4C23900EFA90B /* MiniCardView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		DEEF8B482BDF224C002C6073 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DEEF8B492BDF225D002C6073 /* LessonView.swift */,
+				DE56EF1E2BE4A75200EFA90B /* EditCardView.swift */,
+				DE56EF272BE4C16800EFA90B /* SubjectView.swift */,
+				DE9CFCB02BEDC30800898FCA /* AddCardView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,9 +208,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE56EF1F2BE4A75200EFA90B /* EditCardView.swift in Sources */,
+				DE56EF2C2BE50AA600EFA90B /* Subject.swift in Sources */,
+				DE56EF242BE4AE4300EFA90B /* BackAndTitle.swift in Sources */,
 				DECC10F42BB6C5990016694A /* ContentView.swift in Sources */,
+				DE8E652D2BDFC9DC00E7460E /* CardView.swift in Sources */,
+				DE56EF1D2BE273AB00EFA90B /* Card.swift in Sources */,
 				DECC10F62BB6C5990016694A /* Item.swift in Sources */,
+				DEEF8B4A2BDF225D002C6073 /* LessonView.swift in Sources */,
+				DE8382AA2BEA12F900055CAD /* PencilKitCanvasView.swift in Sources */,
+				DE56EF2A2BE4C23900EFA90B /* MiniCardView.swift in Sources */,
+				DE56EF282BE4C16800EFA90B /* SubjectView.swift in Sources */,
+				DE56EF222BE4AA9900EFA90B /* PencilKitCanvas.swift in Sources */,
 				DECC10F22BB6C5990016694A /* CardifyApp.swift in Sources */,
+				DEEF8B472BDF2082002C6073 /* ColouredProgressBar.swift in Sources */,
+				DE9CFCB12BEDC30800898FCA /* AddCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
